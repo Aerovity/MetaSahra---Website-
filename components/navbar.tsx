@@ -32,10 +32,10 @@ export function Navbar() {
         {/* Desktop Navigation */}
         <div className="hidden md:flex items-center gap-8">
           <Link href="#about" className="text-foreground/80 hover:text-foreground transition-colors">
-            À Propos
+            About
           </Link>
           <Link href="#projects" className="text-foreground/80 hover:text-foreground transition-colors">
-            Projets
+            Projects
           </Link>
           <Link href="#contact" className="text-foreground/80 hover:text-foreground transition-colors">
             Contact
@@ -61,21 +61,21 @@ export function Navbar() {
               className="text-foreground/80 hover:text-foreground transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              À Propos
+              About
             </Link>
             <Link
               href="#projects"
               className="text-foreground/80 hover:text-foreground transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Projets
+              Projects
             </Link>
             <Link
               href="#contact"
               className="text-foreground/80 hover:text-foreground transition-colors py-2"
               onClick={() => setIsMenuOpen(false)}
             >
-              Contact
+              Contacts
             </Link>
           </div>
         </div>

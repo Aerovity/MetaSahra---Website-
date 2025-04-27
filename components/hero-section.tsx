@@ -43,7 +43,7 @@ export function HeroSection() {
       <div className="container mx-auto px-4 relative z-20 text-center text-white">
         <h1 className="text-4xl md:text-6xl font-bold mb-6">MetaSahra</h1>
         <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-          Nous créons des solutions innovantes alimentées par l'intelligence artificielle
+         We create Agents that provide innovative solutions powered by artificial intelligence
         </p>
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
           <Button
@@ -51,7 +51,7 @@ export function HeroSection() {
             size="lg"
             className="bg-gradient-to-r from-purple-600/80 to-pink-600/80 hover:from-purple-700/90 hover:to-pink-700/90 border-2 border-white/70 backdrop-blur-sm"
           >
-            <a href="#about">Découvrir</a>
+            <a href="#about">About us</a>
           </Button>
           <Button
             asChild
@@ -59,7 +59,7 @@ export function HeroSection() {
             size="lg"
             className="border-2 border-white/70 text-white bg-transparent hover:bg-white/20 backdrop-blur-sm"
           >
-            <a href="#contact">Nous Contacter</a>
+            <a href="#contact">Contacting us</a>
           </Button>
         </div>
       </div>

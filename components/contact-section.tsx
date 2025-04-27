@@ -35,9 +35,9 @@ export function ContactSection() {
     <section id="contact" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contactez-Nous</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact us</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Vous avez un projet en tête ? Nous serions ravis d'en discuter et de voir comment nous pouvons vous aider.
+          Got a project in mind? We’d love to discuss it and see how we can help!.
           </p>
         </div>
 
@@ -50,16 +50,6 @@ export function ContactSection() {
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
                     <p className="text-muted-foreground">contact@metasahra.com</p>
-                  </div>
-                </CardContent>
-              </Card>
-
-              <Card>
-                <CardContent className="p-6 flex items-start space-x-4">
-                  <Phone className="h-6 w-6 text-purple-600 dark:text-purple-400 mt-1" />
-                  <div>
-                    <h3 className="font-semibold text-lg mb-1">Téléphone</h3>
-                    <p className="text-muted-foreground"> N/A </p>
                   </div>
                 </CardContent>
               </Card>
@@ -87,14 +77,14 @@ export function ContactSection() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div className="space-y-2">
                       <label htmlFor="name" className="text-sm font-medium">
-                        Nom
+                        Name
                       </label>
                       <Input
                         id="name"
                         name="name"
                         value={formData.name}
                         onChange={handleChange}
-                        placeholder="Votre nom"
+                        placeholder="Your name"
                         required
                       />
                     </div>
@@ -108,7 +98,7 @@ export function ContactSection() {
                         type="email"
                         value={formData.email}
                         onChange={handleChange}
-                        placeholder="votre@email.com"
+                        placeholder="your@email.com"
                         required
                       />
                     </div>
@@ -116,14 +106,14 @@ export function ContactSection() {
 
                   <div className="space-y-2">
                     <label htmlFor="subject" className="text-sm font-medium">
-                      Sujet
+                      Object
                     </label>
                     <Input
                       id="subject"
                       name="subject"
                       value={formData.subject}
                       onChange={handleChange}
-                      placeholder="Sujet de votre message"
+                      placeholder="Subject of your message"
                       required
                     />
                   </div>
@@ -137,7 +127,7 @@ export function ContactSection() {
                       name="message"
                       value={formData.message}
                       onChange={handleChange}
-                      placeholder="Votre message..."
+                      placeholder="Your message..."
                       rows={6}
                       required
                     />
@@ -148,7 +138,7 @@ export function ContactSection() {
                     className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 border-0"
                   >
                     <Send className="mr-2 h-4 w-4" />
-                    Envoyer le message
+                    Send your message
                   </Button>
                 </form>
               </CardContent>

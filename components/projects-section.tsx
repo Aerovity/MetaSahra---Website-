@@ -8,7 +8,7 @@ const projects = [
   {
     id: 1,
     title: "StudentCopilot",
-    description: "AI powered App pour assister les étudiant dans leur études.",
+    description: "AI-powered app to assist students in their studies.",
     image: "/images/StudentCopilot.png",
     tags: ["OpenAI", "NLP and Vector Databases", "React"],
     githubUrl: "https://www.studentcopilot.app/",
@@ -17,7 +17,7 @@ const projects = [
   {
     id: 2,
     title: "CV-Vision",
-    description: "Extension Chrome et Assistant virtuel pour optimiser votre CV à la recherche d'emploi.",
+    description: "Chrome Extension and Virtual Assistant to optimize your CV for job hunting.",
     image: "/images/CVision.png",
     tags: ["NLP", "Python", "Chatbot"],
     githubUrl: "https://github.com/faisalmujawar148/cvision",
@@ -26,7 +26,7 @@ const projects = [
   {
     id: 3,
     title: "ArticSense",
-    description: "Le model IA qui detecte en direct les animaux polaires dans leur envionnement naturel.",
+    description: "The AI model that detects polar animals in real-time in their natural environment.",
     image: "/images/ArticSense.jpg",
     tags: ["OpenCV", "Data Science", "Visualisation"],
     githubUrl: "https://github.com/Aerovity/ArticSense---Snow-Animals-AI-Spotter",
@@ -35,7 +35,7 @@ const projects = [
   {
     id: 4,
     title: "READYOU",
-    description: "Generateur de readme.md pour vos projects informatique sur Github.",
+    description: "README.md generator for your software projects on GitHub.",
     image: "/images/Readyou.png",
     tags: ["Fintuning", "Vector Database", "Python"],
     githubUrl: "https://github.com/Egham-7/readme-ai",
@@ -48,10 +48,9 @@ export function ProjectsSection() {
     <section id="projects" className="py-20 bg-muted/50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Nos Projets</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Projects</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-            Découvrez quelques-unes de nos réalisations récentes en matière d'intelligence artificielle et de
-            développement logiciel.
+          Discover some of our recent achievements in artificial intelligence and software development.
           </p>
         </div>
 
@@ -86,7 +85,7 @@ export function ProjectsSection() {
                   <Button size="sm" asChild>
                     <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                       <ExternalLink className="mr-2 h-4 w-4" />
-                      Voir le projet
+                      See the project
                     </a>
                   </Button>
                 </div>

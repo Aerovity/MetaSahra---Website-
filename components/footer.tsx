@@ -23,7 +23,7 @@ export function Footer() {
               className="h-10 w-auto mb-4 hidden dark:block"
             />
             <p className="text-muted-foreground mt-4">
-              Créateurs de solutions innovantes alimentées par l'intelligence artificielle.
+            Creators of innovative solutions powered by artificial intelligence agents.
             </p>
           </div>
 
@@ -32,17 +32,17 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="#about" className="text-muted-foreground hover:text-foreground transition-colors">
-                  À Propos
+                  About
                 </Link>
               </li>
               <li>
                 <Link href="#projects" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Projets
+                  Projects
                 </Link>
               </li>
               <li>
                 <Link href="#contact" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Contact
+                  Contacts
                 </Link>
               </li>
             </ul>
@@ -53,29 +53,29 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Développement IA
+                  AI Dev
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Agents Intelligents
+                  Agents
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Consultation
+                  Consultations
                 </Link>
               </li>
               <li>
                 <Link href="#" className="text-muted-foreground hover:text-foreground transition-colors">
-                  Formation
+                  Formations
                 </Link>
               </li>
             </ul>
           </div>
 
           <div className="md:col-span-1">
-            <h3 className="font-semibold text-lg mb-4">Suivez-nous</h3>
+            <h3 className="font-semibold text-lg mb-4">Follow us</h3>
             <div className="flex space-x-4">
               <a href="#" className="text-muted-foreground hover:text-foreground transition-colors">
                 <Github className="h-5 w-5" />
@@ -98,7 +98,7 @@ export function Footer() {
         </div>
 
         <div className="border-t border-border mt-12 pt-8 text-center text-muted-foreground">
-          <p>&copy; {new Date().getFullYear()} MetaSahra. Tous droits réservés.</p>
+          <p>&copy; {new Date().getFullYear()} MetaSahra. All rights reserved.</p>
         </div>
       </div>
     </footer>
