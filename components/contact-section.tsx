@@ -7,7 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Card, CardContent } from "@/components/ui/card"
-import { Mail, Phone, MapPin, Send } from "lucide-react"
+import { Mail, MapPin, Send } from "lucide-react"
 
 export function ContactSection() {
   const [formData, setFormData] = useState({
@@ -24,11 +24,19 @@ export function ContactSection() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Ici, vous ajouteriez la logique pour envoyer le formulaire
-    console.log("Formulaire soumis:", formData)
-    // Réinitialiser le formulaire
-    setFormData({ name: "", email: "", subject: "", message: "" })
-    alert("Fonctionnalité en developement veuillez utiliser l'email svp.")
+    
+    // Create the mailto link with form data
+    const recipient = "contact@metasahra.com";
+    const subject = encodeURIComponent(formData.subject);
+    const body = encodeURIComponent(
+      `Name: ${formData.name}\nEmail: ${formData.email}\n\n${formData.message}`
+    );
+    
+    // Open email client with the form data
+    window.location.href = `mailto:${recipient}?subject=${subject}&body=${body}`;
+    
+    // Optional: Reset form after sending
+    // setFormData({ name: "", email: "", subject: "", message: "" });
   }
 
   return (
@@ -37,7 +45,7 @@ export function ContactSection() {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Contact us</h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-          Got a project in mind? We’d love to discuss it and see how we can help!.
+          Got a project in mind? We'd love to discuss it and see how we can help!.
           </p>
         </div>
 
@@ -49,7 +57,12 @@ export function ContactSection() {
                   <Mail className="h-6 w-6 text-purple-600 dark:text-purple-400 mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg mb-1">Email</h3>
-                    <p className="text-muted-foreground">contact@metasahra.com</p>
+                    <a 
+                      href="mailto:contact@metasahra.com" 
+                      className="text-muted-foreground hover:text-purple-600 dark:hover:text-purple-400 transition-colors"
+                    >
+                      contact@metasahra.com
+                    </a>
                   </div>
                 </CardContent>
               </Card>

@@ -18,7 +18,7 @@ const projects = [
     id: 2,
     title: "CV-Vision",
     description: "Chrome Extension and Virtual Assistant to optimize your CV for job hunting.",
-    image: "/images/CVision.png",
+    image: "/images/Cvision.png",
     tags: ["NLP", "Python", "Chatbot"],
     githubUrl: "https://github.com/faisalmujawar148/cvision",
     liveUrl: "https://github.com/faisalmujawar148/cvision",
