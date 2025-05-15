@@ -7,8 +7,32 @@ const inter = Inter({ subsets: ["latin"] })
 
 export const metadata = {
   title: "MetaSahra - Développeurs d'IA",
-  description: "Nous créons des logiciels et des agents alimentés par l'IA",
-    generator: 'v0.dev'
+  description: "We design intelligent software and AI-powered agents that transform the way businesses operate.",
+  generator: 'v0.dev',
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-icon.png',
+    shortcut: '/favicon-16x16.png',
+  },
+  openGraph: {
+    title: "MetaSahra - Développeurs d'IA",
+    description: "We design intelligent software and AI-powered agents that transform the way businesses operate.",
+    images: [
+      {
+        url: '/images/Site.png', // Path relative to the public directory
+        width: 1200,
+        height: 630,
+        alt: 'MetaSahra',
+      }
+    ],
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: "MetaSahra - Développeurs d'IA",
+    description: "We design intelligent software and AI-powered agents that transform the way businesses operate.",
+    images: ['/og-image.png'],
+  },
 }
 
 export default function RootLayout({

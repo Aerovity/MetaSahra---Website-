@@ -1,75 +1,157 @@
-"use client"
+import React from 'react'
+import Link from 'next/link'
+import { Button } from '@/components/ui/button'
+import Image from 'next/image'
+import { HeroHeader } from '@/components/hero8-header'
+import { InfiniteSlider } from '@/components/ui/infinite-slider'
+import { ProgressiveBlur } from '@/components/ui/progressive-blur'
+import { ShimmerButton } from './magicui/shimmer-button'
+export default function HeroSection() {
+    return (
+        <>
+            <main className="overflow-x-hidden">
+                <section>
+                    <div className="pb-24 pt-12 md:pb-32 lg:pb-56 lg:pt-44">
+                        <div className="relative mx-auto flex max-w-6xl flex-col px-6 lg:block">
+                            <div className="mx-auto max-w-lg text-center lg:ml-0 lg:w-1/2 lg:text-left">
+                                <h1 className="mt-8 max-w-2xl text-balance text-5xl font-medium md:text-6xl lg:mt-16 xl:text-7xl">MetaSahra AI Agent Innovators</h1>
+                                <p className="mt-8 max-w-2xl text-pretty text-lg">Supercharge your growth with MetaSahra’s AI smart, scalable, and built to boost your bottom line.</p>
 
-import { useEffect, useRef, useState } from "react"
-import { Button } from "@/components/ui/button"
-import { ArrowDown } from "lucide-react"
+                                <div className="mt-12 flex flex-col items-center justify-center gap-2 sm:flex-row lg:justify-start">
+                                    <Button
+                                        asChild
+                                        size="lg"
+                                        className="px-5 text-base">
+                                        <Link href="#about">
+                                            <span className="text-nowrap">About</span>
+                                        </Link>
+                                    </Button>
+                                    <Button
+                                        key={2}
+                                        asChild
+                                        size="lg"
+                                        variant="ghost"
+                                        className="px-5 text-base">
+                                        <Link href="#contact">
+                                            <span className="text-nowrap">Contact us</span>
+                                        </Link>
+                                    </Button>
+                                </div>
+                            </div>
+                            <Image
+                                className="-z-10 order-first ml-auto h-56 w-full object-cover invert sm:h-96 lg:absolute lg:inset-0 lg:-right-20 lg:-top-96 lg:order-last lg:h-max lg:w-2/3 lg:object-contain dark:mix-blend-lighten dark:invert-0"
+                                src="/images/quartz.jpg"
+                                alt="Abstract Object"
+                                height="4000"
+                                width="3000"
+                            />
+                        </div>
+                    </div>
+                </section>
+                <section className="bg-background pb-16 md:pb-32">
+                    <div className="group relative m-auto max-w-6xl px-6">
+                        <div className="flex flex-col items-center md:flex-row">
+                            <div className="md:max-w-44 md:border-r md:pr-6">
+                                <p className="text-end text-sm">Powering the best teams</p>
+                            </div>
+                            <div className="relative py-6 md:w-[calc(100%-11rem)]">
+                                <InfiniteSlider
+                                    speedOnHover={20}
+                                    speed={40}
+                                    gap={112}>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-5 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/nvidia.svg"
+                                            alt="Nvidia Logo"
+                                            height="20"
+                                            width="auto"
+                                        />
+                                    </div>
 
-export function HeroSection() {
-  const videoRef = useRef<HTMLVideoElement>(null)
-  const [videoError, setVideoError] = useState(false)
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-4 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/column.svg"
+                                            alt="Column Logo"
+                                            height="16"
+                                            width="auto"
+                                        />
+                                    </div>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-4 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/github.svg"
+                                            alt="GitHub Logo"
+                                            height="16"
+                                            width="auto"
+                                        />
+                                    </div>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-5 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/nike.svg"
+                                            alt="Nike Logo"
+                                            height="20"
+                                            width="auto"
+                                        />
+                                    </div>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-5 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/lemonsqueezy.svg"
+                                            alt="Lemon Squeezy Logo"
+                                            height="20"
+                                            width="auto"
+                                        />
+                                    </div>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-4 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/laravel.svg"
+                                            alt="Laravel Logo"
+                                            height="16"
+                                            width="auto"
+                                        />
+                                    </div>
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-7 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/lilly.svg"
+                                            alt="Lilly Logo"
+                                            height="28"
+                                            width="auto"
+                                        />
+                                    </div>
 
-  useEffect(() => {
-    if (videoRef.current) {
-      videoRef.current.play().catch((error) => {
-        console.error("Erreur de lecture automatique de la vidéo:", error)
-        setVideoError(true)
-      })
-    }
-  }, [])
+                                    <div className="flex">
+                                        <img
+                                            className="mx-auto h-6 w-fit dark:invert"
+                                            src="https://html.tailus.io/blocks/customers/openai.svg"
+                                            alt="OpenAI Logo"
+                                            height="24"
+                                            width="auto"
+                                        />
+                                    </div>
+                                </InfiniteSlider>
 
-  return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
-      {/* Video Background */}
-      <div className="absolute inset-0 z-0">
-        {!videoError ? (
-          <video
-            ref={videoRef}
-            autoPlay
-            loop
-            muted
-            playsInline
-            className="w-full h-full object-cover"
-            onError={() => setVideoError(true)}
-          >
-            <source src="/videos/hero.mp4" type="video/mp4" />
-          </video>
-        ) : (
-          <div className="w-full h-full bg-gradient-to-br from-purple-900 via-violet-800 to-pink-700"></div>
-        )}
-        <div className="absolute inset-0 bg-black/60 z-10"></div>
-      </div>
-
-      {/* Content */}
-      <div className="container mx-auto px-4 relative z-20 text-center text-white">
-        <h1 className="text-4xl md:text-6xl font-bold mb-6">MetaSahra</h1>
-        <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-         We create Agents that provide innovative solutions powered by artificial intelligence
-        </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Button
-            asChild
-            size="lg"
-            className="bg-gradient-to-r from-purple-600/80 to-pink-600/80 hover:from-purple-700/90 hover:to-pink-700/90 border-2 border-white/70 backdrop-blur-sm"
-          >
-            <a href="#about">About us</a>
-          </Button>
-          <Button
-            asChild
-            variant="outline"
-            size="lg"
-            className="border-2 border-white/70 text-white bg-transparent hover:bg-white/20 backdrop-blur-sm"
-          >
-            <a href="#contact">Contacting us</a>
-          </Button>
-        </div>
-      </div>
-
-      {/* Scroll Down Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 z-20 animate-bounce">
-        <a href="#about" className="text-white">
-          <ArrowDown size={32} />
-        </a>
-      </div>
-    </section>
-  )
+                                <div className="bg-linear-to-r from-background absolute inset-y-0 left-0 w-20"></div>
+                                <div className="bg-linear-to-l from-background absolute inset-y-0 right-0 w-20"></div>
+                                <ProgressiveBlur
+                                    className="pointer-events-none absolute left-0 top-0 h-full w-20"
+                                    direction="left"
+                                    blurIntensity={1}
+                                />
+                                <ProgressiveBlur
+                                    className="pointer-events-none absolute right-0 top-0 h-full w-20"
+                                    direction="right"
+                                    blurIntensity={1}
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+        </>
+    )
 }

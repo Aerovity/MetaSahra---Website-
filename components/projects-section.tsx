@@ -3,12 +3,13 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Github, ExternalLink } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { ShimmerButton } from "@/components/magicui/shimmer-button";
 
 const projects = [
   {
     id: 1,
     title: "StudentCopilot",
-    description: "AI-powered app to assist students in their studies.",
+    description: "An AI-powered app designed to revolutionize how students learn, study, and succeed. Designed to support students in their academic journey.",
     image: "/images/StudentCopilot.png",
     tags: ["OpenAI", "NLP and Vector Databases", "React"],
     githubUrl: "https://www.studentcopilot.app/",
@@ -17,7 +18,7 @@ const projects = [
   {
     id: 2,
     title: "CV-Vision",
-    description: "Chrome Extension and Virtual Assistant to optimize your CV for job hunting.",
+    description: "A powerful Chrome Extension and Virtual Assistant designed to perfect your CV and land your dream job faster",
     image: "/images/Cvision.png",
     tags: ["NLP", "Python", "Chatbot"],
     githubUrl: "https://github.com/faisalmujawar148/cvision",
@@ -26,7 +27,7 @@ const projects = [
   {
     id: 3,
     title: "ArticSense",
-    description: "The AI model that detects polar animals in real-time in their natural environment.",
+    description: "An open-source AI model built to empower scientists and wildlife observers by detecting polar animals in real time solving the challenge of monitoring them in their natural, remote habitats.",
     image: "/images/ArticSense.jpg",
     tags: ["OpenCV", "Data Science", "Visualisation"],
     githubUrl: "https://github.com/Aerovity/ArticSense---Snow-Animals-AI-Spotter",
@@ -35,7 +36,7 @@ const projects = [
   {
     id: 4,
     title: "READYOU",
-    description: "README.md generator for your software projects on GitHub.",
+    description: "An AI-powered README.md generator to instantly create clear, professional documentation for Developers GitHub projects. Saving you time and effort.",
     image: "/images/Readyou.png",
     tags: ["Fintuning", "Vector Database", "Python"],
     githubUrl: "https://github.com/Egham-7/readme-ai",
@@ -45,7 +46,7 @@ const projects = [
 
 export function ProjectsSection() {
   return (
-    <section id="projects" className="py-20 bg-muted/50">
+    <section id="projects" >
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Projects</h2>
@@ -58,7 +59,7 @@ export function ProjectsSection() {
           {projects.map((project) => (
             <Card
               key={project.id}
-              className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300"
+              className="overflow-hidden border-0 shadow-lg hover:shadow-xl transition-all duration-300 bg-[#03000d]"
             >
               <div className="relative h-64 w-full">
                 <Image src={project.image || "/placeholder.svg"} alt={project.title} fill className="object-cover" />

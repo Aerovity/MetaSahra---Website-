@@ -4,22 +4,22 @@ import { Github, Linkedin, Twitter, Instagram } from "lucide-react"
 
 export function Footer() {
   return (
-    <footer className="bg-muted py-12">
+    <footer>
       <div className="container mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="md:col-span-1">
             <Image
-              src="/images/logo-light.png"
+              src="/images/metasahra logo trans.png"
               alt="MetaSahra Logo"
-              width={150}
-              height={40}
+              width={300}
+              height={80}
               className="h-10 w-auto mb-4 dark:hidden"
             />
             <Image
-              src="/images/logo-dark.png"
+              src="/images/metasahra logo.png"
               alt="MetaSahra Logo"
-              width={150}
-              height={40}
+              width={300}
+              height={80}
               className="h-10 w-auto mb-4 hidden dark:block"
             />
             <p className="text-muted-foreground mt-4">

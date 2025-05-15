@@ -22,10 +22,10 @@ export function Navbar() {
   }
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-gray-900/90 backdrop-blur-md border-b">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-[#0b0c0f]/80 backdrop-blur-md">
       <div className="container mx-auto px-4 py-3 flex justify-between items-center">
         <Link href="/" className="flex items-center gap-2">
-          <Image src="/images/logo-icon.png" alt="MetaSahra Logo" width={40} height={40} className="h-10 w-auto" />
+          <Image src="/images/metasahra-icon.png" alt="MetaSahra Logo" width={40} height={40} className="h-10 w-auto" />
           <span className="text-xl font-bold text-white">MetaSahra</span>
         </Link>
 
