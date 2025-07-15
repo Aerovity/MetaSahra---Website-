@@ -17,12 +17,12 @@ const projects = [
   },
   {
     id: 2,
-    title: "CV-Vision",
-    description: "A powerful Chrome Extension and Virtual Assistant designed to perfect your CV and land your dream job faster",
-    image: "/images/Cvision.png",
-    tags: ["NLP", "Python", "Chatbot"],
-    githubUrl: "https://github.com/faisalmujawar148/cvision",
-    liveUrl: "https://github.com/faisalmujawar148/cvision",
+    title: "Riglii - Algerian Freelance Platform",
+    description: "One of the first Algerian AI powered freelance platforms, connecting freelancers with clients across various industries. With a modern design and user-friendly interface, it aims to empower local talent.",
+    image: "/images/riglii.png",
+    tags: ["NextJS", "Python", "Chatbot", "AI", "Freelance Platform"],
+    githubUrl: "https://riglii.com/",
+    liveUrl: "https://riglii.com/",
   },
   {
     id: 3,
